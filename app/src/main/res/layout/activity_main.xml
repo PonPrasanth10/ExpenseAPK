@@ -24,7 +24,8 @@
         android:layout_alignParentTop="true"
         android:indeterminate="false"
         android:max="100"
-        android:progressDrawable="@color/primary"
+        android:progressTint="@color/primary"
+        android:indeterminateTint="@color/primary"
         android:visibility="gone" />
 
     <!-- Offline Fallback Screen -->

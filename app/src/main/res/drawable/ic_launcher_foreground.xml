@@ -1,9 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Stylized Rupee symbol foreground in clean white -->
     <path
         android:fillColor="#FFFFFF"
         android:pathData="M38,32 h32 M38,42 h32 M38,32 v22 c6,0 12,3 15,8 l13,20 h-10 l-11,-17 c-2,-3 -5,-5 -10,-5 v22 h-7 z" />
