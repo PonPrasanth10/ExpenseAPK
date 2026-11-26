@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'in.studentspend.app'
+    namespace 'com.studentspend.app'
     compileSdk 34
 
     defaultConfig {
-        applicationId "in.studentspend.app"
+        applicationId "com.studentspend.app"
         minSdk 26
         targetSdk 34
         versionCode 1

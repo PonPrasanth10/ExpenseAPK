@@ -1,4 +1,4 @@
-package in.studentspend.app
+package com.studentspend.app
 
 import android.annotation.SuppressLint
 import android.content.Context
