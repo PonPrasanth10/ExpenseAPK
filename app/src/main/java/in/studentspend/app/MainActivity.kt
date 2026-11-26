@@ -31,20 +31,8 @@ class MainActivity : AppCompatActivity() {
 
     private val fileChooserLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == RESULT_OK) {
-                val data = result.data
-                val results = when {
-                    data?.dataString != null -> arrayOf(Uri.parse(data.dataString))
-                    data?.clipData != null -> {
-                        val clip = data.clipData!!
-                        Array(clip.itemCount) { i -> clip.getItemAt(i).uri }
-                    }
-                    else -> null
-                }
-                fileUploadCallback?.onReceiveValue(results)
-            } else {
-                fileUploadCallback?.onReceiveValue(null)
-            }
+            val uris = WebChromeClient.FileChooserParams.parseResult(result.resultCode, result.data)
+            fileUploadCallback?.onReceiveValue(uris)
             fileUploadCallback = null
         }
 
